@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body style="background: black">
+      <div id="bellIcon">
+         <!-- This is where we will render our Notification Inbox component -->
+      </div>
+      <script type="module">
+         import Engagespot from './dist/esm/index.js';
+
+         Engagespot.render('#bellIcon', {
+            apiKey: 'API_KEY',
+            userId: 'USER_ID',
+         });
+      </script>
+   </body>
+</html>
